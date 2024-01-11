@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Main from "./page/Main";
 import { SuccessPage } from "./page/Success";
 import { FailPage } from "./page/FailPage";
+import Shopping from "./page/Shopping";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/fail",
     element: <FailPage />,
+  },
+  {
+    path: "/shopping",
+    element: <Shopping />,
   },
 ]);
 root.render(
